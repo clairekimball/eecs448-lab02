@@ -44,6 +44,15 @@ bool LinkedList<T>::search(T value) const
 	/** TODO
 		Fix this method
 	*/
+	for (int i=1; i<m_size; i++)
+	{
+		if (temp->getValue()==value)
+		{
+			isFound=true;
+		}
+		temp=temp->getNext();
+	}
+
 
 	return(isFound);
 }
@@ -106,6 +115,7 @@ bool LinkedList<T>::removeBack()
 	/** TODO
 		Fix this method
 	*/
+
 
 	return(isRemoved);
 }
